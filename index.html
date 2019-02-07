@@ -9,41 +9,30 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1>Mental Health Help</h1>
     <div class='card container side'>
+    <div id='cssFor'>
+    <h1>Mental Health Help</h1>
     <form id="survey-form">
-            <label for="fullName">Full Name: <input type="text" name="Full Name" id="name" placeholder="Full Name" required></label>
-            <label for="Age">Age: <input type="number" id="age" name="Age"
+            <input type="text" name="Full Name" class="mentalHealth" placeholder="Full Name" required>
+            <input type="number" class="mentalHealth" name="Age"
                 min="0" max="110" placeholder="Age" required></label>
-            <label for="phoneNumber">Phone Number: <input type="tel" id="number" name="phone"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10" placeholder="(305) 000-000" required></label>
-            <label for="email">Email: <input type="email" id="email" placeholder="Email" required></label>
-            <div class='genderAnswer'>
-                Gender: <input type="radio" class="genderContainer" name="drone" value="Female" checked><label for="female">Female</label>
-                        <input type="radio" class="genderContainer" name="drone" value="Male" checked><label for="male">Male</label>
-                        <input type="radio" class="genderContainer" name="drone" value="Transgender" checked><label for="Trans">Transgender</label>
-                        <input type="radio" class="genderContainer" name="drone" value="other" checked><label for="other">Other</label>
+            <input type="tel" class="mentalHealth" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10" placeholder="(305) 000-000" required>
+            <input type="email" class="mentalHealth" placeholder="Email" required></label>
+                 <input type="text" name="mentalHealth" class="mentalHealth" placeholder='What is your understanding of the term mental health?' required>
+                <div>
+                 <input type="text" name="mentalHealth" class="mentalHealth" placeholder="Have you experience mental health issues through friends, family, or work colleagues?" required>
+                </div>
+                <div>
+                 <input type="text" name="mentalHealth" class="mentalHealth" placeholder="Have you experienced a mental health issue yourself?" required>
+                </div>
+                <div>
+                <input type="text" name="mentalHealth" class="mentalHealth" placeholder="Are you constantly under a lot of stress?" required>
+                </div>
+                <div>
+                <input type="text" name="mentalHealth" class="mentalHealth" placeholder="What do you believe is a great way to relieve stress?" required>
+                <input type="submit" class="mentalHealth" placeholder="submit">
+                <div>
             </div>
-            <div class='textAnswer'>
-                <div>
-                What is your understanding of the term mental health? <input type="text" name="mentalHealth" id="mentalHealth" required>
-                </div>
-                <div>
-                Have you experience mental health issues through friends, family, or work colleagues? <input type="text" name="mentalHealth" class="mentalHealth" required>
-                </div>
-                <div>
-                Have you experienced a mental health issue yourself? <input type="text" name="mentalHealth" class="mentalHealth" required>
-                </div>
-                <div>
-                Are you constantly under a lot of stres? <input type="text" name="mentalHealth" class="mentalHealth" required>
-                </div>
-                <div>
-                What do you believe is a great way to relieve stress? <input type="text" name="mentalHealth" class="mentalHealth" required>
-                </div>
-                <div>
-                Why are you reaching out? <input type="checkbox" class="reachOut" name="drone" value="toHelp"><label for="toHelp">To Help Others</label>
-                <input type="checkbox" class="reachOut" name="drone" value="getHelp"><label for="getHelp">Get Help</label>
-                </div>
             </div>
             </div>
         </form>
